@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposición Técnica | Escuela N° 462 Reconquista</title>
+  
+  <!-- Tipografías elegantes Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Escuela 462" class="nav-logo" onerror="this.src='https://via.placeholder.com/48/432f2e/feefb8?text=462'">
+      <div class="nav-titles">
+        <h1>Escuela de Educación técnico profesional N° 462</h1>
+        <span>Reconquista, Santa Fe</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#primer-trimestre">1° Trimestre</a>
+      <a href="#segundo-trimestre">2° Trimestre</a>
+    </nav>
+  </header>
+
+  <!-- HÉROE / BIENVENIDA -->
+  <section class="hero">
+    <div class="hero-badge">Taller de informática 2026 </div>
+    <h2>¿Qué es la Exposición Técnica?</h2>
+    <p>Es un espacio institucional de encuentro y demostración donde los estudiantes de la Escuela Técnica N° 462 abren sus puertas a distintas escuelas de la cuidad, familias y docentes los conocimientos, saberes y proyectos prácticos desarrollados a lo largo del ciclo lectivo. En este evento se integran la teoría y la práctica adquiridas en las distintas áreas técnicas, como el diseño de redes informáticas y el desarrollo de software en Python, reflejando el esfuerzo, la creatividad y la innovación tecnológica impulsados desde la educación técnica.</p>
+  </section>
+
+  <!-- 1. PRESENTACIÓN / QUIÉNES SOMOS (IMPACTO DE ENTRADA CON FOTO AGRANDADA) -->
+  <section id="nosotros" class="section-container">
+    <div class="card card-butter presentation-card">
+      <div class="presentation-text">
+        <h3 class="section-title">¿Quiénes Somos?</h3>
+        <p>Somos los estudiantes de 5to año del área de Informática de la <strong>Escuela Técnica N° 462</strong> de Reconquista. En el transcurso del año nos dedicamos el primer trimestre en todo lo relacionado a redes de informática, armados de cables, comandos, exposiciones de la red de nuetros hogares y la importancia de ello, luego en el segundo trimestre cambio la cosa y empezamos un lenguaje de programación nuevo llamado python donde desarrollamos los distintos sistemas informaticos. </p>
+      </div>
+      <div class="presentation-image">
+        <img src="foto_colven.jpeg" alt="Delegación de estudiantes en Colven" onerror="this.src='https://via.placeholder.com/650x420/c4dae8/432f2e?text=Foto+Grupal+Colven'">
+        <span class="image-caption">Visita a la planta industrial de Colven — Guadalupe Norte, Santa Fe</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PRIMER TRIMESTRE: REDES INFORMÁTICAS -->
+  <section id="primer-trimestre" class="section-container">
+    <div class="section-header">
+      <span class="badge-blue">1° Trimestre</span>
+      <h3 class="section-title">Redes Informáticas e Infraestructura</h3>
+    </div>
+
+    <!-- Menú interactivo de pestañas -->
+    <div class="tabs-container">
+      <button class="tab-btn active" onclick="openTab(event, 'redes-intro')">1. Introducción</button>
+      <button class="tab-btn" onclick="openTab(event, 'redes-clasif')">2. Clasificación</button>
+      <button class="tab-btn" onclick="openTab(event, 'redes-hw')">3. Hardware</button>
+      <button class="tab-btn" onclick="openTab(event, 'redes-cables')">4. Cables y Medios</button>
+      <button class="tab-btn" onclick="openTab(event, 'redes-ip')">5. IP, Comandos y Exposiciones</button>
+    </div>
+
+    <div class="tab-contents">
+      <!-- TEMA 1 -->
+      <div id="redes-intro" class="tab-content active">
+        <div class="block-section">
+          <span class="topic-tag">Concepto Clave</span>
+          <h4>¿Qué es una red informática?</h4>
+          <p>Es un conjunto de ordenadores conectados entre sí que permiten compartir información (documentos, imágenes), recursos (impresoras, discos duros) y servicios (como Internet).</p>
+        </div>
+        
+        <h4 class="sub-heading">Ventajas Principales</h4>
+        <div class="grid-2">
+          <div class="card card-blue">
+            <strong>1. Comunicación eficiente</strong>
+            <p>Facilita la interacción rápida y fluida entre usuarios conectados en tiempo real.</p>
+          </div>
+          <div class="card card-blue">
+            <strong>2. Compartir recursos</strong>
+            <p>Uso compartido de impresoras, archivos y almacenamiento, reduciendo costos significativamente.</p>
+          </div>
+          <div class="card card-blue">
+            <strong>3. Centralización</strong>
+            <p>Simplifica la administración, actualizaciones y mantenimiento centralizado desde un servidor principal.</p>
+          </div>
+          <div class="card card-blue">
+            <strong>4. Escalabilidad</strong>
+            <p>Las redes pueden ampliarse fácilmente a medida que crece la organización o la institución.</p>
+          </div>
+        </div>
+        
+        <div class="card card-butter" style="margin-top: 1.5rem;">
+          <strong>Costos Iniciales:</strong> Requiere una inversión inicial de infraestructura y software para poder operar y automatizar tareas.
+        </div>
+      </div>
+
+      <!-- TEMA 2 -->
+      <div id="redes-clasif" class="tab-content">
+        <div class="block-section">
+          <span class="topic-tag">Por Cobertura</span>
+          <h4>Clasificación según su tamaño o área</h4>
+          <div class="grid-2" style="margin-top: 1rem;">
+            <div class="info-box">
+              <strong>PAN (Red de área personal)</strong>
+              <p>Comunica dispositivos en un radio de pocos metros (ej. auricular Bluetooth y teléfono).</p>
+            </div>
+            <div class="info-box">
+              <strong>LAN (Red de área local)</strong>
+              <p>Pequeña extensión como una casa, un instituto, una universidad o una empresa.</p>
+            </div>
+            <div class="info-box">
+              <strong>MAN (Red de área metropolitana)</strong>
+              <p>Cubre una mayor superficie como una ciudad o municipio, conectando sucursales.</p>
+            </div>
+            <div class="info-box">
+              <strong>WAN (Red de área extensa)</strong>
+              <p>Conecta equipos entre ciudades, países o continentes distintos (ej. Internet).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="block-section" style="margin-top: 1.5rem;">
+          <span class="topic-tag">Por Privacidad</span>
+          <h4>Clasificación según nivel de acceso</h4>
+          <div class="grid-3" style="margin-top: 1rem;">
+            <div class="card card-butter">
+              <strong>Redes Públicas</strong>
+              <p>Acceso global y disponible para el público en general (ej. Internet, Wi-Fi público).</p>
+            </div>
+            <div class="card card-butter">
+              <strong>Redes Privadas</strong>
+              <p>Restringidas al propietario o usuarios que las utilizan (Intranets).</p>
+            </div>
+            <div class="card card-butter">
+              <strong>VPN (Virtual Private Network)</strong>
+              <p>Conexión segura y cifrada construida sobre una red global pública.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMA 3 -->
+      <div id="redes-hw" class="tab-content">
+        <span class="topic-tag">Dispositivos</span>
+        <h4 class="sub-heading">Dispositivos de interconexión local</h4>
+        <div class="grid-2" style="margin-top: 1rem;">
+          <div class="card card-blue">
+            <strong>Hub (Concentrador)</strong>
+            <p>Repite las señales a todos los puertos sin segmentar el tráfico, lo que puede causar colisiones.</p>
+          </div>
+          <div class="card card-blue">
+            <strong>Switch (Conmutador)</strong>
+            <p>Filtra y dirige los datos solo al destino correcto, segmentando la red y mejorando notablemente el rendimiento.</p>
+          </div>
+          <div class="card card-blue">
+            <strong>Punto de Acceso (AP)</strong>
+            <p>Conecta dispositivos inalámbricos a la red física y extiende la cobertura Wi-Fi.</p>
+          </div>
+          <div class="card card-blue">
+            <strong>Router (Enrutador)</strong>
+            <p>Conecta redes diferentes, distribuye Internet en el hogar u oficina y gestiona el tráfico local.</p>
+          </div>
+        </div>
+        
+        <div class="block-section" style="margin-top: 1.5rem;">
+          <span class="topic-tag">Identificación Única</span>
+          <h4>Tarjeta de Red (NIC) & Dirección MAC</h4>
+          <p>Elemento de hardware imprescindible para enviar y recibir información. Cada tarjeta posee un identificador único grabado de fábrica llamado <strong>Dirección MAC</strong> (6 bytes / 48 bits), donde los primeros 3 bytes indican el fabricante (OUI).</p>
+        </div>
+      </div>
+
+      <!-- TEMA 4 -->
+      <div id="redes-cables" class="tab-content">
+        <div class="block-section">
+          <span class="topic-tag">Físico</span>
+          <h4>Medios de Transmisión</h4>
+          <div class="grid-3" style="margin-top: 1rem;">
+            <div class="info-box">
+              <strong>Cable Coaxial</strong>
+              <p>Similar al de antena de televisión; utiliza conector BNC.</p>
+            </div>
+            <div class="info-box">
+              <strong>Par Trenzado (UTP / FTP / STP)</strong>
+              <p>UTP sin blindaje, FTP con lámina metálica y STP blindado para entornos industriales.</p>
+            </div>
+            <div class="info-box">
+              <strong>Fibra Óptica</strong>
+              <p>Transmite luz a gran velocidad (Gigabits) e inmune a interferencias magnéticas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="block-section" style="margin-top: 1.5rem;">
+          <span class="topic-tag">Estándares</span>
+          <h4>Normas de Cableado (T568A y T568B)</h4>
+          <div class="grid-2" style="margin-top: 1rem;">
+            <div class="card card-butter">
+              <strong>Cable Directo</strong>
+              <p>Conecta dispositivos distintos (PC a Switch, Switch a Router) utilizando la misma norma en ambos extremos.</p>
+            </div>
+            <div class="card card-butter">
+              <strong>Cable Cruzado</strong>
+              <p>Conecta dispositivos similares (PC a PC, Router a Router) utilizando T568A en un extremo y T568B en el otro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMA 5 -->
+      <div id="redes-ip" class="tab-content">
+        <div class="grid-2">
+          <div class="card card-butter">
+            <span class="topic-tag">Protocolo</span>
+            <h4>IPv4 vs IPv6</h4>
+            <p><strong>IPv4:</strong> Direcciones de 32 bits (4.3 mil millones de IPs) en formato decimal separado por puntos (ej. <code>192.168.1.1</code>).</p>
+            <p style="margin-top: 0.5rem;"><strong>IPv6:</strong> Direcciones de 128 bits con notación hexadecimal.</p>
+          </div>
+          <div class="card card-butter">
+            <span class="topic-tag">Configuración</span>
+            <h4>IP Estática vs Dinámica</h4>
+            <p><strong>Estática:</strong> Configuración manual en servidores o cámaras.</p>
+            <p style="margin-top: 0.5rem;"><strong>Dinámica:</strong> Asignada automáticamente por un servidor DHCP.</p>
+          </div>
+        </div>
+
+        <div class="block-section" style="margin-top: 1.5rem;">
+          <span class="topic-tag">Diagnóstico</span>
+          <h4>Comandos Útiles de Red</h4>
+          <ul class="styled-list" style="margin-top: 0.8rem;">
+            <li><code>tracert</code>: Rastrea la ruta que sigue un paquete mostrando saltos y latencia en milisegundos.</li>
+            <li><code>netstat</code>: Muestra conexiones activas y estados como ESTABLISHED o LISTENING.</li>
+            <li><code>ipconfig /release</code> y <code>/renew</code>: Liberan y solicitan una nueva IP al servidor DHCP.</li>
+          </ul>
+        </div>
+
+        <!-- GALERÍA DE EXPOSICIONES EN AULA -->
+        <div style="margin-top: 3rem; border-top: 2px dashed var(--blue); padding-top: 2rem;">
+          <h4 style="margin-bottom: 0.5rem;">Exposiciones del 1° Trimestre en Aula</h4>
+          <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Fotos de las presentaciones sobre diagramas de red, ubicación de dispositivos y análisis de redes del hogar realizadas por los alumnos de 5to año:</p>
+          
+          <div class="classroom-gallery">
+            <div class="gallery-item" onclick="openModal('expo.1jfif')">
+              <img src="expo1.jfif" alt="Exposición Plano de Red 1">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b6b21b.jpg')">
+              <img src="expo2.jfif" alt="Exposición Diagrama de Red">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b6b1ff.jpg')">
+              <img src="expo3.jfif" alt="Exposición Ubicación de Dispositivos">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b6b1c3.jpg')">
+              <img src="expo4.jfif" alt="Exposición La Red de mi Hogar">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b6b1a3.jpg')">
+              <img src="expo5.jfif" alt="Exposición Cableado y Conectores">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b66025.jpg')">
+              <img src="expo6.jfif" alt="Exposición Planos de Cobertura">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b66025.jpg')">
+              <img src="expo7.jpeg" alt="Exposición Planos de Cobertura">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b66025.jpg')">
+              <img src="cable.jpeg" alt="Exposición Planos de Cobertura">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b66025.jpg')">
+              <img src="cable1.jpeg" alt="Exposición Planos de Cobertura">
+            </div>
+            <div class="gallery-item" onclick="openModal('image_b66025.jpg')">
+              <img src="listo.jpeg" alt="Exposición Planos de Cobertura">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SEGUNDO TRIMESTRE: PYTHON Y PROYECTOS -->
+  <section id="segundo-trimestre" class="section-container">
+    <div class="section-header">
+      <span class="badge-blue">2° Trimestre</span>
+      <h3 class="section-title">Programación en Python y sistemas informáticos de los alumnos </h3>
+    </div>
+
+    <p style="margin-bottom: 2rem;">A continuación presentamos los diferentes sistemas desarrollados en Python por los alumnos durante el ciclo lectivo, aplicando interfaces gráficas interactivas y bases de datos relacionales:</p>
+
+    <!-- GALERÍA DE PROYECTOS DESARROLLADOS -->
+    <div class="projects-grid">
+      
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="nare.PNG" alt="COLVEN S.A." onclick="openModal(this.src)">
+        </div>
+        <h4>COLVEN S.A. | Gestión de Depósito</h4>
+        <p class="lorem-text">Es una aplicación de escritorio desarrollada en Python orientada al ámbito industrial y logístico. Su función principal es optimizar el control de inventario de repuestos y la administración de múltiples sucursales o depósitos para la empresa Colven S.A.
+El sistema está diseñado bajo el concepto de Interfaz de Usuario Moderna , ofreciendo una experiencia visual limpia, intuitiva y profesional gracias al uso de CustomTkinter. </p>
+        <button class="btn-sm" onclick="openModal('nare.PNG')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="medici.PNG" alt="VortexNexus" onclick="openModal(this.src)">
+        </div>
+        <h4>VortexNexus | Concesionaria</h4>
+        <p class="lorem-text">VortexNexus es un programa de gestión de concesionarias de vehículos, desarrollado en Python, que tiene como objetivo facilitar la administración y organización de la información.
+El sistema permite registrar, modificar, eliminar y consultar vehículos y clientes, además de controlar el estado del inventario. Posee una interfaz moderna e intuitiva y utiliza una base de datos SQLite para almacenar la información de manera organizada y prolija.</p>
+        <button class="btn-sm" onclick="openModal('medici.PNG')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="liz.jpeg" alt="Mega Servicios" onclick="openModal(this.src)">
+        </div>
+        <h4>Mega Servicios | Consultoría</h4>
+        <p class="lorem-text">Mega Servicios es una aplicación informática de gestión y consultoría digital que funciona como una plataforma centralizada de intermediación laboral para conectar de manera eficiente a las personas que buscan empleo con las empresas clientes que necesitan cubrir vacantes. A través de estas funciones, el operador administrativo puede dar de alta nuevos perfiles profesionales y ofertas laborales adjuntando currículums en PDF, consultar y filtrar la información en tiempo real mediante tablas interactivas, actualizar los datos cuando sea necesario mediante la modificación, y dar de baja registros de forma segura. 
+        </p>
+        <button class="btn-sm" onclick="openModal('liz.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="dana.png" alt="Blue Beauty" onclick="openModal(this.src)">
+        </div>
+        <h4>Blue Beauty | Gestión de Turnos</h4>
+        <p class="lorem-text">Blue Beauty es una aplicación para gestionar turnos de un salón de estética. Permite registrar, buscar, modificar y eliminar turnos, guardando los datos en una base de datos.</p>
+        <button class="btn-sm" onclick="openModal('dana.png')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="gian.PNG" alt="Forge.me" onclick="openModal(this.src)">
+        </div>
+        <h4>Forge.me | Ventas y Servicio Técnico</h4>
+        <p class="lorem-text">Forge.me es una aplicación de escritorio desarrollada en Python para administrar información de un negocio de informática. El programa cuenta con dos modos principales: VENTA y REPARACIÓN. Según el modo elegido, se habilitan distintos menús para trabajar con productos, ventas, clientes y reparaciones. </p>
+        <button class="btn-sm" onclick="openModal('gian.PNG')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="male.jpeg" alt="Control de Campo" onclick="openModal(this.src)">
+        </div>
+        <h4>Sistema de Control de Campo</h4>
+        <p class="lorem-text">Este sistema cumple la principal función de ayudar a las personas que cuentan con empleados y animales a su cargo y necesitan llevar registro de las actividades realizadas, tanto como el sueldo, horas y dias trabajados - en el caso de empleados - y nacimientos y vacunas en el caso de los animales. Cuenta también con una sección para poder registrar las precipitaciones de la zona con fecha y milímetros caídos.</p>
+        <button class="btn-sm" onclick="openModal('male.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="agus2.jpeg" alt="Periódico Escolar" onclick="openModal(this.src)">
+        </div>
+        <h4>Periódico E.E.T.P. N° 462</h4>
+        <p class="lorem-text"> Módulo institucional para la difusión de noticias escolares y comunicados oficiales.</p>
+        <button class="btn-sm" onclick="openModal('agus2.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="agus1.jpeg" alt="Mesa de Exámenes" onclick="openModal(this.src)">
+        </div>
+        <h4>Mesa de Exámenes Escolar</h4>
+        <p class="lorem-text">Formulario interactivo para inscripción de estudiantes a mesas examinadoras.</p>
+        <button class="btn-sm" onclick="openModal('agus1.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="agus3.jpeg" alt="Acceso Privado" onclick="openModal(this.src)">
+        </div>
+        <h4>Acceso Privado / Autenticación</h4>
+        <p class="lorem-text">Mi aplicación funciona como un periódico para que los alumnos/as se mantengan informados acerca de lo que sucede en su institución y que sirva como motivación para querer seguir aprendiendo. Por otra parte, la aplicación cuenta con una sección para que los estudiantes puedan inscribirse a la mesa de exámenes y contar con la información necesaria para saber cuándo rendir, esto evitaría confusiones y aliviaría el trabajo de los/as preceptores.</p>
+        <button class="btn-sm" onclick="openModal('agus3.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="tedesca.PNG" alt="Vaquita System" onclick="openModal(this.src)">
+        </div>
+        <h4>Vaquita System | Gestión de Campos</h4>
+        <p class="lorem-text"> Vaquita System es un sistema de libreta digital de ganadería diseñado para satisfacer las necesidades administrativas del productor ganadero mediante un sistema digital más eficiente, cómodo y ordenado. </p>
+        <button class="btn-sm" onclick="openModal('tedesca.PNG')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="uriel.jpeg" alt="Gestión de Trámites" onclick="openModal(this.src)">
+        </div>
+        <h4>Gestión de Trámites y Turnos</h4>
+        <p class="lorem-text">Es una aplicación de escritorio en Python que funciona como un Sistema de Gestión de Turnos para el Carnet de Conducir. Permite registrar ciudadanos que solicitan un turno yadministrarlos mediante una base de datos local.</p>
+        <button class="btn-sm" onclick="openModal('uriel.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="valen.jpeg" alt="Agenda Personal" onclick="openModal(this.src)">
+        </div>
+        <h4>Agenda Personal & Tareas</h4>
+        <p class="lorem-text">Agenda Personal es una aplicación diseñada para facilitar la organización de las actividades cotidianas. Surge como una solución al problema de olvidar tareas, confundir fechas o perder el control de las responsabilidades diarias. Permite registrar, modificar y administrar actividades, establecer prioridades y llevar un seguimiento de las tareas pendientes y completadas. Con una interfaz sencilla e intuitiva, ayuda a organizar mejor el tiempo y mantener todas las actividades en un solo lugar.</p>
+        <button class="btn-sm" onclick="openModal('valen.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="viki s.jpeg" alt="FanFrame" onclick="openModal(this.src)">
+        </div>
+        <h4>FanFrame | Plataforma de Reseñas</h4>
+        <p class="lorem-text"> Esta app está inspirada en plataformas como Letterboxd, que permiten registrar y compartir opiniones sobre películas. La propuesta busca ampliar esta idea a otros contenidos culturales, como series, canciones, álbumes, artistas y libros. Se desarrolla como una aplicación de escritorio rápida y práctica.</p>
+        <button class="btn-sm" onclick="openModal('viki s.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="werner.jpeg" alt="Caja del Centro" onclick="openModal(this.src)">
+        </div>
+        <h4>Caja del Centro | Panel Financiero</h4>
+        <p class="lorem-text"></p>
+        <button class="btn-sm" onclick="openModal('werner.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="yancen.PNG" alt="Mi Restaurante" onclick="openModal(this.src)">
+        </div>
+        <h4>Mi Restaurante | Sistema de Gestión</h4>
+        <p class="lorem-text">El Sistema de Gestión para Restaurantes es un programa creado para facilitar la organización y el trabajo diario de un restaurante. Desde una misma aplicación, permite controlar las mesas, registrar pedidos, administrar los productos del menú, organizar la preparación de los alimentos y consultar las ventas realizadas.
+El sistema busca simplificar las tareas habituales del personal y mantener la información organizada. De esta manera, es más fácil saber qué mesas están ocupadas, qué pedidos deben prepararse y cuáles ya están listos para entregar.
+</p>
+        <button class="btn-sm" onclick="openModal('yancen.PNG')">Ampliar captura</button>
+      </div>
+
+      <!-- REPETICIONES DE ESPACIO PARA LAS 4 FOTOS FALTANTES -->
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="kevin.jpeg" alt="Proyecto Nuevo 1" onclick="openModal(this.src)">
+        </div>
+        <h4>Test Psicológico</h4>
+        <p class="lorem-text">Es una aplicación que servirá como test psicológico para quienes quieran ser contratados, para que se tenga de manera más detallada a qué tipo de persona va a contratar la empresa.</p>
+        <button class="btn-sm" onclick="openModal('kevin.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="lara.jpeg" alt="Proyecto Nuevo 2" onclick="openModal(this.src)">
+        </div>
+        <h4>Ayudante de estudio</h4>
+        <p class="lorem-text">Este ayudante de estudio surgió como una solución ante las dificultad que los alumnos presentan a la hora  de estudiar. La idea es brindar una  experiencia única a cada usuario adaptándose a las necesidades de cada estudiante. Teniendo esto en cuenta la aplicación brinda un plan de estudio organizado en bloques de estudios y de descansos, haciendo más fácil la organización de las horas de estudio</p>
+        <button class="btn-sm" onclick="openModal('lara.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="lucas.jpeg" alt="Proyecto Nuevo 3" onclick="openModal(this.src)">
+        </div>
+        <h4>MyGame</h4>
+        <p class="lorem-text"> MyGame es un programa para jugar y apreciar el arte de los videojuegos de distintas eras</p>
+        <button class="btn-sm" onclick="openModal('lucas.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="mauri.jpeg" alt="Proyecto Nuevo 4" onclick="openModal(this.src)">
+        </div>
+        <h4>Compra/venta - Seguímiento de stock</h4>
+        <p class="lorem-text">Es un programa que se encarga tanto de registrar las compras y ventas de un negocio, como de llevar un seguimiento del stock en el almacén y las ganancias que se generan.</p>
+        <button class="btn-sm" onclick="openModal('mauri.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="bruni.png" alt="Proyecto Nuevo 4" onclick="openModal(this.src)">
+        </div>
+        <h4>MuchiMoney</h4>
+        <p class="lorem-text">MuchiMoney es una herramienta diseñada para la creación y gestión de presupuestos. Entre sus principales funciones se encuentra la posibilidad de exportar los datos registrados en formato PDF, facilitando su impresión y archivo físico.</p>
+        <button class="btn-sm" onclick="openModal('mauri.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="viki n.jpeg" alt="Proyecto Nuevo 4" onclick="openModal(this.src)">
+        </div>
+        <h4>MI MASCOTA</h4>
+        <p class="lorem-text">Es una aplicación de escritorio integral en Python que integra una interfaz gráfica de 
+usuario (GUI) moderna utilizando la biblioteca CustomTkinter, respaldada por una base de 
+datos relacional implementada en SQLite3 (mascotas.db). El sistema busca centralizar la 
+identidad del tutor, el perfil morfológico y fotográfico de los animales, una agenda interactiva 
+de eventos y un historial clínico estructurado por categorías, ofreciendo una solución 
+funcional, original y coherente a la problemática de la administración del bienestar de tu 
+macota.</p>
+        <button class="btn-sm" onclick="openModal('mauri.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="ana.jpeg" alt="Proyecto Nuevo 4" onclick="openModal(this.src)">
+        </div>
+        <h4>CargaTrack- seguímiento de carga<h4>
+        <p class="lorem-text"> Este trabajo es con el objetivo de ayudar específicamente a una empresa de metalúrgica, teniendo registro del control de carga, colaborando a la organización de cada producto, integrado con un QR para cada carga de la empresa, incluyendo un mapa del recorrido de los productos, todo atraves de un programa que fue realizado en el lenguaje de programación de Python.</p>
+        <button class="btn-sm" onclick="openModal('mauri.jpeg')">Ampliar captura</button>
+      </div>
+
+      <div class="project-card card-butter">
+        <div class="project-img-container">
+          <img src="feli.jpeg" alt="Proyecto Nuevo 4" onclick="openModal(this.src)">
+        </div>
+        <h4>Brilliant Visualizer</h4>
+        <p class="lorem-text">"Brilliant Visualizer" (De brilliant gem, de voxlblade) es un analizador de builds/loadouts del juego RPG "Voxlblade" por Bawxl. Le permite al usuario elejir su equipamiento y partes de arma, y luego muestra impulsos, defensas, y atributos especiales calculados desde ellos. De esta manera, un jugador puede analizar un build antes de gastar tiempo y recursos en realizarlo en el juego en si, algo dificl de hacer a mano gracias a la complejidad del juego.</p>
+        <button class="btn-sm" onclick="openModal('mauri.jpeg')">Ampliar captura</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL AMPLIAR IMÁGENES -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <p><strong>Exposición Técnica — Escuela N° 462</strong></p>
+    <p>Reconquista, Provincia de Santa Fe — Argentina</p>
+  </footer>
+
+  <script>
+    // Cambio de pestañas
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("tab-btn");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Modal Lightbox de imágenes
+    function openModal(src) {
+      var modal = document.getElementById("imageModal");
+      var modalImg = document.getElementById("modalImg");
+      modal.style.display = "flex";
+      modalImg.src = src;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
